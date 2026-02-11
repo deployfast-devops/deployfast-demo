@@ -1,14 +1,8 @@
 {
   "name": "deployfast-demo",
   "version": "1.0.0",
-  "description": "DeployFast demo app",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.19.2"
   }
 }

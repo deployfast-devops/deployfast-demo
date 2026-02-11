@@ -1,10 +1,5 @@
-const express = require('express');
-const app = express();
+const http = require('http');
 
-app.get('/', (req, res) => {
-  res.send('Hello from DeployFast 🚀');
-});
-
-app.listen(3000, () => {
-  console.log('Running on port 3000');
-});
+http.createServer((req, res) => {
+  res.end("DeployFast Demo Running 🚀");
+}).listen(3000, () => console.log("Server running on 3000"));

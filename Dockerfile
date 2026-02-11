@@ -1,10 +1,7 @@
-FROM python:3.10-slim
-
+FROM node:18
 WORKDIR /app
-
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-
+COPY package.json .
+RUN npm install
 COPY . .
-
-CMD ["gunicorn", "-b", "0.0.0.0:8000", "app:app"]
+EXPOSE 3000
+CMD ["node", "index.js"]
